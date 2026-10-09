@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-A=np.array([5, 10, 15, 16, 20, 24])
+A=np.array([5, 10, 15, 16, 2, 1])
 dsA=pd.Series(A).std()
 T=pd.DataFrame(A)
 print(A)
