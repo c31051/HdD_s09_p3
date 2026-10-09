@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mi-script:
+    # Cambiamos "image:" por "build:" para que lea tu Dockerfile local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: contenedor-python-clase
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python s09_e01.py
