@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   mi-script:
-    # Cambiamos "image:" por "build:" para que lea tu Dockerfile local
     build:
       context: .
       dockerfile: Dockerfile
