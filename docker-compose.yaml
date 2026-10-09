@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: contenedor-python-clase
+    container_name: contenedor_py3
     volumes:
       - .:/app
     working_dir: /app
