@@ -1,0 +1,12 @@
+name: Flujo_Auto_CICD
+on: [push]
+jobs:
+  construir-y-probar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descarga_Repo
+        uses: actions/checkout@v4
+
+      - name: Ejecutando_Docker
+        run: |
+          docker compose up --build
